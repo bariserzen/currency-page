@@ -1,0 +1,65 @@
+.kripto {
+    padding: 6rem 0rem;
+    background-color:#DFDFDD;
+    max-width: 1300px;
+    top:90px;
+    margin: auto;
+}
+
+.kripto .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.kripto .container .col-1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.kripto .container .col-1 ul {
+    
+    display: grid;
+    grid-template-columns: repeat(5 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.kripto .container .col-1 li  {
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 1rem 0rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.kripto .container .col-2 img {
+    width: 100%;
+    text-align: center;
+    justify-content:center;
+
+    border-radius: 70px;
+}
+
+@media screen and (max-width: 940px) {
+
+    .kripto .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .kripto .container .col-2 img {
+        width: 80%;
+        text-align: center;
+        justify-content:center;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+}
+

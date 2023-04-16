@@ -1,0 +1,66 @@
+.footer {
+    background-color:black;
+    color:white;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    margin: auto;
+}
+
+.col-1 {
+    margin: 0 2rem;
+    text-align:start;
+    text-align: center;
+}
+
+
+.col-1 .line {
+    display: flex;
+    border-bottom: 1px solid white;
+    background-color: white;
+    text-align: center;
+    margin: .5rem 2rem;
+}
+
+.col-1 .header {
+    font-size: 2.5rem;
+}
+
+.col-1 .header span {
+    font-size: 1.5rem;
+}
+
+.col-1 h1:hover {
+    cursor: pointer;
+}   
+
+
+
+@media screen and (max-width: 940px) {
+    
+    .footer .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 2rem;
+
+    } 
+
+    .footer .container .col-1 {
+        padding-top: 1rem;
+
+    } 
+
+    .footer .container .col-1 .header {
+        margin-top: -8px;
+    }
+
+    .col-1 h1 {
+        font-size: .9rem;
+    }    
+
+}

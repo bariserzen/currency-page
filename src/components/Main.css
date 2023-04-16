@@ -1,0 +1,112 @@
+.main {
+    padding: 7rem 3rem;
+    background-color:#DFDFDD;
+    max-width: 1100px;
+    top:90px;
+    margin: auto;
+}
+
+.main .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.container .col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.col1 .price  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+}
+
+.col1 .price a {
+
+    display: flex;
+    padding: 2rem 1rem;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    margin: 2rem;
+    justify-content: center;
+}
+
+.col1 .price a:hover {
+    box-shadow: rgb(0 0 0 / 20%) 0px 8px 24px;
+    color: black;
+    background-color: yellow;
+    border: 2px solid white;
+}
+
+.col1 .message {
+    margin: 0rem 0rem;
+}
+.col1 .message h2{
+    margin: 2rem 0;
+}
+
+.container .col2 {
+    display: flex;
+    justify-content: center;
+}
+
+.col2 .img-container {
+    width: 100%;
+    display: flex;    
+}
+
+.col2 img {
+    max-width: 80%;
+    margin: auto;
+    border-radius: 60px;
+}
+
+@media screen and (max-width: 940px) {
+
+    .main {
+        padding: 3rem 1rem;
+    }
+
+    .main .container {
+        display: flex;
+        flex-direction: column;
+        padding: -2rem;
+    }
+    .main .container .col1 {
+        margin-bottom: 3rem;
+        align-items: center;
+    
+    }
+   
+    .col2 .img-container {
+        width: 100%;
+        display: flex;
+        
+    }
+
+    .col1 .price a {
+        padding: 2rem 2rem;
+        margin: 1.5rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .col1 .message h2{
+        margin: 1rem 0;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+
+    .col1 .price a {
+        padding: 2rem 1.4rem;
+        
+    }
+}
