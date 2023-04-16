@@ -2,6 +2,7 @@ import React, {useEffect,useState} from 'react';
 import axios from 'axios';
 import './Kripto.css';
 import İmg from '../images/ezgif.com-video-to-gif.gif';
+import Button from './Button';
 
 const Kripto = () => {
 
@@ -26,6 +27,9 @@ const Kripto = () => {
 
   return (
     <div className='kripto'>
+
+      <Button className=''/>
+      
       <div className='container'>
 
         <div className='col-1'>

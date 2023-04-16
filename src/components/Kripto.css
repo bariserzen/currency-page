@@ -2,6 +2,7 @@
     padding: 6rem 0rem;
     background-color:#DFDFDD;
     max-width: 1300px;
+    padding-bottom: 12rem;
     top:90px;
     margin: auto;
 }
@@ -37,16 +38,25 @@
     text-align: center;
 }
 
+.kripto .container .col-2 {
+    align-items: center;
+    padding: 2rem 0;
+}
+
 
 .kripto .container .col-2 img {
     width: 100%;
-    text-align: center;
+    margin: 0;
     justify-content:center;
-
+    align-items: center;
     border-radius: 70px;
 }
 
 @media screen and (max-width: 940px) {
+    .kripto {
+        padding: 3rem 0rem;
+       
+    }
 
     .kripto .container {
         display: grid;
@@ -56,10 +66,12 @@
 
     .kripto .container .col-2 img {
         width: 80%;
-        text-align: center;
-        justify-content:center;
         margin-left: 3rem;
         margin-top: 2rem;
+    }
+
+    .kripto .container .col-2 {
+        padding: 7rem 0;
     }
 }
 

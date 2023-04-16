@@ -43,8 +43,7 @@
     align-items: center;
 }
 
-.nav-menu .head {
-    padding: 5px 1rem;
+.nav-menu li {
     margin: 0 5px;
     font-size: 1rem;
     font-weight: 600;
@@ -52,8 +51,13 @@
     
 }
 
+.nav-menu li .nav-link {
+    padding: 5px 1rem;
+    color: white;
+}
 
-.nav-menu .head:hover {
+
+.nav-menu li .nav-link:hover {
     background-color:#FFFF00;
     color: black;
     font-size: 1.05rem;
@@ -94,7 +98,7 @@
         
     }
 
-    .nav-menu .head {
+    .nav-menu li {
         padding: 2rem 1rem;
         width: 100%;
         text-align: start;
@@ -102,17 +106,19 @@
         align-items: start;
         border-bottom: 1px solid grey;
     }
+    li .nav-link {
+        color: white;
+    }
     
     .nav-menu.active {
         right: 0;
     }
 
-    .nav-menu .head:hover {
+    .nav-menu li:hover {
         background-color:black;
         font-size: 1rem;
         color: #FFFF00;
         padding: 2rem 1.2rem;
-        border-radius: 0px;
     }
     
 

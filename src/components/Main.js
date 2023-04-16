@@ -10,9 +10,9 @@ const Main = () => {
 
 
   const [data,setData] = useState(null);
-  const [data1,setData1] = useState(null);
+  // const [data1,setData1] = useState(null);
   const url = 'https://finans.truncgil.com/today.json';
-  const url1 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=1&page=1&sparkline=false&locale=en';
+  // const url1 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=1&page=1&sparkline=false&locale=en';
 
   useEffect(() => {
     axios
@@ -20,18 +20,20 @@ const Main = () => {
     .catch((error) => {console.log(error)})
     }, [])
 
-  useEffect(() => {
-    axios
-    .get(url1).then((response) => {setData1(response.data)}) 
-    .catch((error) => {console.log(error)})
-    }, [])
+  // useEffect(() => {
+  //   axios
+  //   .get(url1).then((response) => {setData1(response.data)}) 
+  //   .catch((error) => {console.log(error)})
+  //   }, [])
 
     if (!data) return null
-    if (!data1) return null
+    // if (!data1) return null
   
     console.log(data);
-    console.log(data1);
+    // console.log(data1);
 
+
+  
   return (
     <div className='main'>
         <div className='container'>
@@ -43,10 +45,10 @@ const Main = () => {
           <h3>Fiyatlara hemen ulaş</h3>
           </div>
           <div className='price'>
-          <a href='/'>Dolar / TL<br/>{data.USD.Satış}</a>
+          <a href='/'>Dolar<br/>{data.USD.Satış}</a>
           <a href='/'>ONS Altın<br/>{data.ons.Satış}</a>
-          <a href='/'>Bitcoin<br/>${data1[0].current_price.toLocaleString()}</a>
-          <a href='/'>Gümüş<br/>${data.gumus.Satış}</a>
+          {/* <a href='/'>Bitcoin<br/>${data1[0].current_price.toLocaleString()}</a> */}
+          <a href='/'>Gümüş<br/>${data["gram-altin"].Satış}</a>
           </div>
         </div>
 

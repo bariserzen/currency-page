@@ -20,11 +20,18 @@ const closeMobileMenu = () => setClick(false);
             <h1>Ne <span>Ne Kadar ?</span></h1>
             </Link>
 
-            <div className={click ? 'nav-menu active' : 'nav-menu'}>
-               <Link to='/döviz' > <p className='head' onClick={closeMobileMenu}>Döviz</p></Link>
-               <Link to='/altin'><p className='head' onClick={closeMobileMenu}>Altın</p></Link>
-               <Link to='/kripto'><p className='head' onClick={closeMobileMenu}>Kripto Paralar</p></Link> 
-            </div>
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+
+               <li><Link to='/'     className='nav-link'
+                         onClick={closeMobileMenu}>Ana Sayfa</Link></li>
+               <li><Link to='/döviz'className='nav-link' 
+                         onClick={closeMobileMenu}>Döviz</Link></li>
+               <li><Link to='/altin' className='nav-link' 
+                         onClick={closeMobileMenu}>Altın</Link></li>
+               <li><Link to='/kripto' className='nav-link' 
+                         onClick={closeMobileMenu}>Kripto Paralar</Link></li>
+
+            </ul>
 
             <div className='hamburger'onClick={clickHandler}>
               {click ? <FaTimes size={30}/> : <FaBars size={30}/>}
