@@ -6,7 +6,6 @@ export default function Dövizpage() {
   return (
     <>
       <Döviz/>
-
     </>
   );
 }

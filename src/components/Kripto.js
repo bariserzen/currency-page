@@ -34,12 +34,24 @@ const Kripto = () => {
 
         <div className='col-1'>
           <ul>
-            <li>Bitcoin:  ${data[0].current_price.toLocaleString()}</li>
-            <li>Ethereum: ${data[1].current_price.toLocaleString()} </li>
-            <li>Dogecoin: ${data[8].current_price.toLocaleString()} </li>
-            <li>Matic:  ${data[9].current_price.toLocaleString()}</li>
-            <li>Ripple:  ${data[5].current_price.toLocaleString()}</li>
-            <li>Binance:  ${data[3].current_price.toLocaleString()}</li>
+            
+            <li><img src={data[0].image} alt=''/>Bitcoin :</li>
+            <li className='left'>${data[0].current_price.toLocaleString()}</li>
+
+            <li><img src={data[1].image} alt=''/>Ethereum :</li>
+            <li className='left'>${data[1].current_price.toLocaleString()}</li>
+
+            <li><img src={data[8].image} alt=''/>Dogecoin :</li>
+            <li className='left'> ${data[8].current_price.toLocaleString()}</li>
+
+            <li><img src={data[9].image} alt=''/>Matic :</li>
+            <li className='left'>${data[9].current_price.toLocaleString()}</li>
+
+            <li><img src={data[5].image} alt=''/>Ripple :</li>
+            <li className='left'>${data[5].current_price.toLocaleString()}</li>
+
+            <li><img src={data[3].image} alt=''/>Bnb : </li>
+            <li className='left'>${data[3].current_price.toLocaleString()}</li>
           </ul>
         </div>
         
