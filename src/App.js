@@ -5,6 +5,7 @@ import RootLayout from './pages/RootLayout';
 import Mainpage from './pages/Mainpage';
 import Dövizpage from './pages/Dövizpage';
 import KriptoPage from './pages/Kriptopage';
+import AltinPage from './pages/AltinPage';
 
 
 
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     { index: true,         element:<Mainpage/> },
     { path: '/döviz',    element:<Dövizpage/> },
     { path: '/kripto',    element:<KriptoPage/> },
+    { path: '/altin',    element:<AltinPage/> },
     
 
    ],

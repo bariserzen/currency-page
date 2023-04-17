@@ -13,6 +13,8 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 25rem;
 }
 
 .döviz .container .col-1 {
@@ -81,5 +83,10 @@
     .döviz .container .col-1 li  {
         padding: 1rem 0rem;
         
+    }
+
+    .döviz .container {
+        padding-top: 5rem;
+        padding-bottom: 15rem;
     }
 }
