@@ -22,7 +22,11 @@ const Döviz = () => {
 
   return (
     <div className='döviz'>
-      <Button/>
+
+    <div className='header'>
+    <Button/> <p className='par'>Ana Sayfa / Döviz</p>
+    </div>
+
       <div className='container'>
         <div className='col-1'>
           <ul>

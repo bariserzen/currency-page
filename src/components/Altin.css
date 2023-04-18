@@ -1,4 +1,4 @@
-.döviz {
+.altin {
     padding: 6rem 0rem;
     background-color:#DFDFDD;
     max-width: 1100px;
@@ -6,7 +6,7 @@
 }
 
 
-.döviz .container {
+.altin .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,34 +18,35 @@
     margin: auto;
 }
 
-.döviz .container .col-1 {
+.altin .container .col-1 {
     text-align: start;
     justify-content:start;
     align-items: center;
 }
 
-.döviz .container .col-1 ul{
+.altin .container .col-1 ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
 }
 
-.döviz .container .col-1 li  {
+.altin .container .col-1 li  {
     font-weight: 600;
     font-size: 1.4rem;
-    padding: 1rem 1rem;
+    padding: 1.5rem 1.5rem;
     align-items: center;
     justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 1px #ffffff;
 }
 
-
-
-.döviz .container .col-2 img {
+.altin .container .col-2 img {
     width: 500px;
     border-radius: 55px;
 }
 
-.döviz .header .par{
+.altin .header .par{
     padding: 1rem 3rem;
     margin: 0 1rem;
     font-size: 1.1rem;
@@ -56,49 +57,49 @@
 
 @media screen and (max-width: 940px) { 
 
-    .döviz {
+    .altin {
         padding: 3rem 0rem;
 
     }
-    .döviz .container {
+    .altin .container {
         display: flex;
         flex-direction: column;
     }
-    .döviz .container .col-1 {
+    .altin .container .col-1 {
         padding-bottom: 8rem;
     }
-    .döviz .container .col-2 {
+    .altin .container .col-2 {
         padding-bottom: 8rem;
     }
 
-    .col-2 img {
-        width: 400px;
+    .altin .container .col-2 img {
+        width: 600px;
         border-radius: 45px;
-        padding-left: 1rem;
     }
 
-    .döviz .header .par{
+    .altin .header .par{
         padding: 1rem 2rem;
     }
+   
 }
 
 
 @media screen and (max-width: 540px) { 
 
 
-    .döviz .container .col-2 img {
+    .altin .container .col-2 img {
         width: 350px;
         border-radius: 45px;
         padding-left: 0rem;
     }
 
-    .döviz .container .col-1 li  {
-        padding: 1rem 0rem;
-        
-    }
-
-    .döviz .container {
+    .altin .container {
         padding-top: 5rem;
         padding-bottom: 15rem;
+    }
+
+    .altin .container .col-1 li  {
+        font-size: 1rem;
+        padding: 2rem 0rem;
     }
 }
