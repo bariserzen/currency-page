@@ -29,7 +29,7 @@ const closeMobileMenu = () => setClick(false);
                <li><Link to='/altin' className='nav-link' 
                          onClick={closeMobileMenu}>Altın</Link></li>
                <li><Link to='/kripto' className='nav-link' 
-                         onClick={closeMobileMenu}>Kripto Paralar</Link></li>
+                         onClick={closeMobileMenu}>Kripto Para</Link></li>
 
             </ul>
 

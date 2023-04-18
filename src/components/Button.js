@@ -3,10 +3,16 @@ import './Button.css';
 import {IoMdArrowRoundBack} from 'react-icons/io';
 import { Link } from 'react-router-dom';
 
-const Button = (props) => {
+
+
+const Button = () => {
   return (
     <>
-      <Link to='/'><IoMdArrowRoundBack size={35} className='icon'/></Link>
+    <button className='button'>
+        <Link to="/">
+        <IoMdArrowRoundBack size={35} className='icon'/>
+        </Link> 
+        </button>
     </>
   );
 };

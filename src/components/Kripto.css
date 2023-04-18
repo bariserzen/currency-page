@@ -14,6 +14,19 @@
     margin: auto;
 }
 
+.kripto .header {
+    display: flex;
+    flex-direction: row;
+}
+
+.kripto .header .par{
+    padding-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+}
+
 .kripto .container .col-1 {
     text-align: start;
     justify-content:start;
@@ -33,6 +46,7 @@
     align-items: center;
     justify-content: center;
 }
+
 
 li span {
     margin-left: 1rem;
@@ -61,7 +75,7 @@ li img {
 
 @media screen and (max-width: 940px) {
     .kripto {
-        padding: 3rem 0rem;
+        padding: 6rem 0rem;
        
     }
 
@@ -69,8 +83,8 @@ li img {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
-        padding-bottom: 15rem;
-        padding-top: 1rem;
+        padding-bottom: 10rem;
+        padding-top: 5rem;
     }
     .kripto .container .col-1 li  {
         

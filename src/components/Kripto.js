@@ -27,9 +27,12 @@ const Kripto = () => {
 
   return (
     <div className='kripto'>
+    
 
-      <Button className=''/>
-      
+    <div className='header'>
+    <Button/> <p className='par'>Ana Sayfa / Kripto Para</p>
+    </div>
+
       <div className='container'>
 
         <div className='col-1'>

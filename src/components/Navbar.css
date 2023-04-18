@@ -92,6 +92,7 @@
         flex-direction: column;
         justify-content: start;
         align-items: start;
+        align-items: center;
         top: 100px;
         right: -100%;
         width: 50%;
@@ -99,7 +100,6 @@
         transition: 0.9s;
         z-index: 2;
         background-color: #000000;
-        align-items: center;
         border-top: 1px solid grey;
         
     }
@@ -109,11 +109,7 @@
         width: 100%;
         text-align: start;
         justify-content: start;
-        align-items: start;
         border-bottom: 1px solid grey;
-    }
-    li .nav-link {
-        color: white;
     }
     
     .nav-menu.active {
