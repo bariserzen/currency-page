@@ -6,6 +6,7 @@ import Mainpage from './pages/Mainpage';
 import Dövizpage from './pages/Dövizpage';
 import KriptoPage from './pages/Kriptopage';
 import AltinPage from './pages/AltinPage';
+import ArbitrajPage from './pages/ArbitrajPage';
 
 
 
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
     { path: '/döviz',    element:<Dövizpage/> },
     { path: '/kripto',    element:<KriptoPage/> },
     { path: '/altin',    element:<AltinPage/> },
+    { path: '/arbitraj',    element:<ArbitrajPage/> },
     
 
    ],

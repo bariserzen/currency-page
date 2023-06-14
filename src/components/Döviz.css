@@ -101,4 +101,8 @@
         padding-top: 5rem;
         padding-bottom: 15rem;
     }
+
+    .döviz .header .par{
+        text-align: center;
+    }
 }

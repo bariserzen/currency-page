@@ -1,11 +1,11 @@
-.kripto {
+.arbitraj {
     padding: 6rem 0rem;
     background-color:#DFDFDD;
     max-width: 1100px;
     margin: auto;
 }
 
-.kripto .container {
+.arbitraj .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 8rem;
@@ -15,8 +15,7 @@
 }
 
 
-
-.kripto .header .par{
+.arbitraj .header .par{
     padding: 1rem 3rem;
     margin: 0 1rem;
     font-size: 1.1rem;
@@ -24,19 +23,23 @@
     border-bottom: 2px solid black; 
 }
 
-.kripto .container .col-1 {
+.arbitraj .container .col-1 {
     text-align: start;
     justify-content:start;
     align-items: start;
     padding: 2rem;
 }
 
-.kripto .container .col-1 ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.arbitraj .container .col-1 ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.col-1 ul .left {
+    text-align: center;
 }
 
-.kripto .container .col-1 li  {
+.arbitraj .container .col-1 li  {
     font-weight: 600;
     font-size: 1.4rem;
     padding: 1rem 0rem;
@@ -45,17 +48,13 @@
 }
 
 
-li span {
-    margin-left: 1rem;
-}
-
-.kripto .container .col-2 {
+.arbitraj .container .col-2 {
     align-items: center;
     padding: 2rem 1rem;
 }
 
 
-.kripto .container .col-2 img {
+.arbitraj .container .col-2 img {
     width: 100%;
     margin: 0;
     justify-content:center;
@@ -63,43 +62,38 @@ li span {
     border-radius: 70px;
 }
 
-li img {
-    width: 20px;
-    justify-content:center;
-    align-items: center;
-    margin-right: 1rem;
-}
+
 
 @media screen and (max-width: 940px) {
-    .kripto {
+    .arbitraj {
         padding: 3rem 0rem;
        
     }
 
-    .kripto .container {
+    .arbitraj .container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
         padding-bottom: 10rem;
         padding-top: 5rem;
     }
-    .kripto .container .col-1 li  {
+    .arbitraj .container .col-1 li  {
         
         padding: 1rem 0rem;
         
     }
 
-    .kripto .container .col-2 img {
+    .arbitraj .container .col-2 img {
         width: 90%;
         margin-left: 2rem;
         margin-top: 2rem;
     }
 
-    .kripto .container .col-2 {
+    .arbitraj .container .col-2 {
         padding: 7rem 0;
     }
 
-    .kripto .container .col-1 {
+    .arbitraj .container .col-1 {
         padding: 0rem;
         text-align: start;
         justify-content:center;
@@ -107,11 +101,7 @@ li img {
         margin: auto;
     }
 
-    .kripto .container .col-1 ul .left{
-        padding-left: 2rem;
-    }
-
-    .kripto .header .par{
+    .arbitraj .header .par{
         padding: 1rem 2rem;
     }
 
@@ -120,16 +110,20 @@ li img {
 
 @media screen and (max-width: 500px) { 
 
-    .kripto .container .col-2 img {
+    .arbitraj .container .col-2 img {
 
         margin-left: 1rem;
         margin-top: 2rem;
     }
 
-    .kripto .header .par{
+    .arbitraj .container .col-1 ul {
+        
+        margin-top: 40px;
+    }
+
+    .arbitraj .header .par{
         text-align: center;
     }
 
     
 }
-

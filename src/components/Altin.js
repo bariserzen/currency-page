@@ -30,17 +30,17 @@ const Altin = () => {
       <div className='container'>
         <div className='col-1'>
           <ul>
-            <li>Ons Altin / Usd</li>
+            <li>Ons Altin / Usd : </li>
             <li>{data.ons.Satış}</li>
-            <li>Gram Altin / TL</li>
+            <li>Gram Altin / TL : </li>
             <li>{data["gram-altin"].Satış}</li>
-            <li>Çeyrek Altin / TL</li>
+            <li>Çeyrek Altin / TL : </li>
             <li>{data["ceyrek-altin"].Satış}</li>
-            <li>Yarım Altin / TL</li>
+            <li>Yarım Altin / TL :</li>
             <li>{data["yarim-altin"].Satış}</li>
-            <li>Tam Altin / TL</li>
+            <li>Tam Altin / TL : </li>
             <li>{data["tam-altin"].Satış}</li>
-            <li>Gram Gümüş / TL</li>
+            <li>Gram Gümüş / TL:</li>
             <li>{data.gumus.Satış}</li>
           </ul>
         </div>

@@ -30,6 +30,8 @@ const closeMobileMenu = () => setClick(false);
                          onClick={closeMobileMenu}>Altın</Link></li>
                <li><Link to='/kripto' className='nav-link' 
                          onClick={closeMobileMenu}>Kripto Para</Link></li>
+                <li><Link to='/arbitraj' className='nav-link' 
+                         onClick={closeMobileMenu}>Arbitraj</Link></li>         
 
             </ul>
 
